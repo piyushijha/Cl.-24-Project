@@ -15,6 +15,8 @@ class Hammer {
   
     display(){
       var pos =this.body.position;
+      pos.x = mouseX;
+      pos.y = mouseY;
       var angle = this.body.angle;
       push();
       translate(pos.x, pos.y);
